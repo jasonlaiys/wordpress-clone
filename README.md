@@ -18,7 +18,7 @@ The Angular code has been built and "deployed" to the backend, under the `blog-s
 
 First, set up the database by running the shell script `blog-server/db.sh`.
 
-Then, navigate to the `blog-server` directory and run `npm start`.
+Then, navigate to the `blog-server` directory and run `npm install`, then `npm start`.
 
 Now, visit `http://localhost:3000/editor/` on your favorite browser to interact with the app.
 
