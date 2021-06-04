@@ -1,0 +1,22 @@
+{
+  "credentials": {
+    "auth": {
+      "jwt": {
+        "secret": "C-UFRaksvPKhx1txJYFcut3QGxsafPmwCY6SCly3G6c",
+        "options": {
+          "algorithm": "HS256",
+          "header": {
+            "alg": "HS256",
+            "typ": "JWT"
+          }
+        }
+      }
+    },
+    "database": {
+      "name": "BlogServer",
+      "url": "mongodb://localhost:27017",
+      "usersCollection": "Users",
+      "postsCollection": "Posts"
+    }
+  }
+}

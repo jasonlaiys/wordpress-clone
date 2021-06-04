@@ -1,0 +1,9 @@
+<div>
+  <button id="list-new-button" (click)="newPost.emit();">New Post</button>
+  <ul class="posts">
+    <li *ngFor="let post of this.posts" id="list-post-{{ post.postid }}" (click)="openPost.emit(post);">
+        <span>{{ convertDate(post.created) }}</span> | {{ post.title }}
+    </li>
+  </ul>
+  <hr>
+</div>

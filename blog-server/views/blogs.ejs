@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wordpress Clone - Blogs</title>
+  </head>
+  <body>
+    <% for (let post of posts) { %>
+      <li>
+        <%- post.title %>
+        <%- post.body %>
+      </li>
+    <% } %>
+
+    <% if (nextUrl) { %>
+      <a href='<%= nextUrl %>'>Next</a>
+    <% } %>
+  </body>
+</html>

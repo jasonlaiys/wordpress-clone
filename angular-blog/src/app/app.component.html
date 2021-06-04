@@ -1,0 +1,18 @@
+<app-list
+  [posts]="posts"
+  (openPost)="openPost($event);"
+  (newPost)="newPost();"></app-list>
+
+<div *ngIf="(appState === 1)">
+  <app-edit
+    [post]="currentPost"
+    (savePost)="savePost($event);"
+    (deletePost)="deletePost($event);"
+    (previewPost)="previewPost($event);"></app-edit>
+</div>
+
+<div *ngIf="(appState === 2)">
+  <app-preview
+    [post]="currentPost"
+    (editPost)="editPost($event);"></app-preview>
+</div>

@@ -1,0 +1,5 @@
+<div>
+  <button id="preview-edit-button" (click)="editPost.emit(this.post);">Edit Post</button>
+  <p id="preview-title" [innerHTML]="renderedTitle"></p>
+  <p id="preview-body" [innerHTML]="renderedBody"></p>
+</div>

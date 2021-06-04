@@ -1,0 +1,18 @@
+<div>
+  <form>
+    <label for="edit-title">Title:</label>
+    <input type="text" id="edit-title" name="edit-title" [(ngModel)]="post.title" value="{{ post.title }}">
+    <br>
+    <br>
+    <label for="edit-body">Body:</label>
+    <textarea type="text" id="edit-body" name="edit-body" [(ngModel)]="post.body" rows="4" cols="50"> {{ post.body }} </textarea>
+    <br>
+    <br>
+    <p>Last Modified {{ convertDate(post.modified) }}</p>
+    <br>
+    <br>
+    <button id="edit-save-button" (click)="savePost.emit(this.post);">Save Post</button>
+    <button id="edit-delete-button" (click)="deletePost.emit(this.post)">Delete Post</button>
+    <button id="edit-preview-button" (click)="previewPost.emit(this.post)">Preview Post</button>
+  </form>
+</div>
